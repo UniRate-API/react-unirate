@@ -1,5 +1,5 @@
 {
-  "name": "react-unirate",
+  "name": "@unirate/react",
   "version": "0.1.0",
   "description": "React hooks and components for the UniRate currency-exchange API. useExchangeRate, useCurrencies, useConvert, useHistoricalRate + <Currency/> and <Convert/> components. Zero runtime deps.",
   "type": "module",

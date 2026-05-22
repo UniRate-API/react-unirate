@@ -64,7 +64,7 @@ export interface UniRateClientOptions {
 
 const DEFAULT_BASE_URL = "https://api.unirateapi.com";
 const DEFAULT_TIMEOUT_MS = 30_000;
-const DEFAULT_USER_AGENT = "react-unirate/0.1.0";
+const DEFAULT_USER_AGENT = "@unirate/react/0.1.0";
 
 const toNum = (v: unknown): number => {
   const n = typeof v === "string" ? Number.parseFloat(v) : (v as number);

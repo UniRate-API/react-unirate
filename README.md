@@ -1,6 +1,6 @@
-# react-unirate
+# @unirate/react
 
-[![npm](https://img.shields.io/npm/v/react-unirate.svg)](https://www.npmjs.com/package/react-unirate)
+[![npm](https://img.shields.io/npm/v/@unirate/react.svg)](https://www.npmjs.com/package/@unirate/react)
 [![ci](https://github.com/UniRate-API/react-unirate/actions/workflows/ci.yml/badge.svg)](https://github.com/UniRate-API/react-unirate/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -19,11 +19,11 @@ React hooks and components for the [UniRate](https://unirateapi.com) currency-ex
 ## Install
 
 ```sh
-npm install react-unirate
+npm install @unirate/react
 # or
-pnpm add react-unirate
+pnpm add @unirate/react
 # or
-yarn add react-unirate
+yarn add @unirate/react
 ```
 
 Peer dep: `react ^18 || ^19`. Requires Node 18.17+ for build/server use.
@@ -31,7 +31,7 @@ Peer dep: `react ^18 || ^19`. Requires Node 18.17+ for build/server use.
 ## Quickstart
 
 ```tsx
-import { UniRateProvider, useExchangeRate, Currency } from "react-unirate";
+import { UniRateProvider, useExchangeRate, Currency } from "@unirate/react";
 
 function App() {
   return (
@@ -164,7 +164,7 @@ Putting an API key directly in client-side React means the key ships to every vi
 Server-only React (RSC, Remix loaders, server actions): you can use the raw `UniRateClient` directly without the provider, since there's no client component involved.
 
 ```ts
-import { UniRateClient } from "react-unirate/client";
+import { UniRateClient } from "@unirate/react/client";
 
 // in a server action / loader:
 const client = new UniRateClient({ apiKey: process.env.UNIRATE_API_KEY! });
